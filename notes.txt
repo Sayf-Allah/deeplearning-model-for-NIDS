@@ -1,0 +1,17 @@
+*using the fillna function to fill the missing values with the value 0 so that we cannot eliminate a big part of the dataset and with parameter 'true' that make the change on the same dataset not create a new one 
+
+
+*so as an conclusion : 
+  numeric_features contain a list of names of numeric columns of dataset
+  categorical_features contain a list of names of categorical columns of dataset 
+
+*Applying the feature scaling on the numeric features to normalize or standardize the range of features to a similar scale therefore no feature dominate on the others during the training model
+
+*Using the StandardScaler() class that contain 'fit_transform' methode to scale and standardize the numeric features by calculating their mean and deviation 
+
+
+*For our categorical features we apply the "one-hot encoding" that used on dataset not have an order , and the function .get_dummies will convert our features into binary vectors so that we can perform our ML model 
+
+*The reshape function used to reshape the input data for LSTM model because we work with sequential data so that we need to convert the data into a suitable format 
+
+*For the splitting we will use the "K-Fold Cross-Validation" that divide the data into k subsets in addition to test and train the model K times therefore obtaining a good estimation of the model 
